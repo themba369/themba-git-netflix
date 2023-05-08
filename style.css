@@ -1,0 +1,187 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,500;1,700&display=swap');
+</style>
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: Open Sans, sans-serif;
+}
+/* fonts */
+.class-title{
+    font-size: 3.125rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+    font-weight: 600;
+}
+.class-subtitle{
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.email-form-title{
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+    margin: 1rem 0;
+}
+/* banner-wrap section */
+.banner-wrap{
+    background-image: url(./assets/BGimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    border-bottom: 10px solid gray;
+    position: relative;
+    /* important */
+    z-index: 1;
+}
+/* overlay of banner-wrap */
+.overlay{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 60%;
+    position: absolute;
+    top: 0;
+}
+/* the nav bar section */
+.navbar{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    margin: 0 45px;
+    padding-top: 45px;
+
+}
+.navbar > img{
+    height: 40px;
+}
+
+.navbar > a{
+    padding: 7px 17px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.banner-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 45px);
+    text-align: center;
+}
+
+.get-started-form{
+    display: flex;
+}
+
+.get-started-form input{
+    height: 50px;
+    width: 450px;
+    padding: 10px;
+}
+
+.get-started-form button{
+    background-color: red;
+    color: white;
+    font-size: 1.625rem;
+    height: 73.5px;
+    width: 214.06px;
+    border: none;
+    padding: 0 26px;
+    border-left: 1px solid;
+}
+
+.info-container{
+    color: white;
+    background: black;
+    display: flex;
+    padding: 100px 45px;
+    border-bottom: 10px solid gray;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tv-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tv-container video {
+    position: absolute;
+}
+
+.tv-container img{
+    z-index: 1;
+}
+
+.footer ul li, .questions-title{
+    color: gray;
+}
+
+.footer-items{
+    margin: 0 47.5px;
+    padding: 70px 40px;
+}
+
+.footer-top{
+    margin-bottom: 30px;
+}
+
+.footer{
+  background-color: black;
+}
+
+/* hover is a pseudo selector to decorate text, e.g. underline. */
+.footer ul li:hover, .questions-title{
+    text-decoration: underline;
+    /* this changes the cursor icon */
+    cursor: pointer;
+} 
+
+.footer-links{
+ list-style-type: none;
+ columns: 4;
+ padding: 0;
+ font-size: 13px;
+ line-height: 3;
+}
+
+.language{
+    height: 53px;
+    width: 142px;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid gray;
+    padding: 0 10px;
+    margin-top: 30px;
+    border-radius: 3px;
+}
+
+.language select{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    appearance: none;
+    background: black;
+    color: gray;
+    background: url(./assets/caret.png) no-repeat 100%;
+
+} 
